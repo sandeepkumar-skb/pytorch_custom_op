@@ -1,0 +1,65 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6f1db/fast && /usr/bin/make  -f CMakeFiles/cmTC_6f1db.dir/build.make CMakeFiles/cmTC_6f1db.dir/build
+make[1]: Entering directory '/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6f1db.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_6f1db.dir/src.cxx.o -c /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6f1db
+/home/sandeep/anaconda3/lib/python3.7/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f1db.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_6f1db.dir/src.cxx.o  -o cmTC_6f1db 
+CMakeFiles/cmTC_6f1db.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x56): undefined reference to `pthread_cancel'
+src.cxx:(.text+0x67): undefined reference to `pthread_join'
+src.cxx:(.text+0x7b): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6f1db.dir/build.make:106: recipe for target 'cmTC_6f1db' failed
+make[1]: *** [cmTC_6f1db] Error 1
+make[1]: Leaving directory '/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles/CMakeTmp'
+Makefile:141: recipe for target 'cmTC_6f1db/fast' failed
+make: *** [cmTC_6f1db/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_05fdc/fast && /usr/bin/make  -f CMakeFiles/cmTC_05fdc.dir/build.make CMakeFiles/cmTC_05fdc.dir/build
+make[1]: Entering directory '/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_05fdc.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_05fdc.dir/CheckFunctionExists.cxx.o -c /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_05fdc
+/home/sandeep/anaconda3/lib/python3.7/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05fdc.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_05fdc.dir/CheckFunctionExists.cxx.o  -o cmTC_05fdc  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_05fdc.dir/build.make:106: recipe for target 'cmTC_05fdc' failed
+make[1]: *** [cmTC_05fdc] Error 1
+make[1]: Leaving directory '/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles/CMakeTmp'
+Makefile:141: recipe for target 'cmTC_05fdc/fast' failed
+make: *** [cmTC_05fdc/fast] Error 2
+
+
+
