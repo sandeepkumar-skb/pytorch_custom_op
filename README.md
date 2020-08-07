@@ -1,13 +1,14 @@
 ## This is short End to End tutorial on how to hook custom operators in PyTorch.
 This Tutorial is devided into 3 Parts.
 
-Part 1: Creating an op and registering it to PyTorch.
+[Part 1](#part-1) : Creating an op and registering it to PyTorch.
 
-Part 2: Building the op into a shared library.
+[Part 2](#part-2) : Building the op into a shared library.
 
-Part 3: Testing out the custom op.
+[Part 3](#part-3) : Testing out the custom op.
 
-## Part 1: Creating an op and registering it to PyTorch.
+## Part 1 
+## Creating an op and registering it to PyTorch.
 1. First, we need a custom operator(duh!) which we want to add to PyTorch.
 For the sake of this tutorial let's take the example of `all_reduce` kernel. We will add a GPU and CPU version of `all_reduce` op in this tutorial.
 
@@ -72,7 +73,8 @@ TORCH_LIBRARY (my_ops, m){
     m.def("custom_allreduce", &custom_allreduce);
 }
 ```
-## Part 2: Building the custom op
+## Part 2: 
+## Building the custom op
 Now we have to build the custom op into a library which can be imported and used as a PyTorch operator. Here I have used the CMake recipe to build the op. If you want to use the python way of building then you refer to [this_link](https://pytorch.org/tutorials/advanced/torch_script_custom_ops.html#building-the-custom-operator) for more details.
 
 1. Create a `CMakeList.txt` file(See the comments for explanation):
@@ -106,7 +108,8 @@ Scanning dependencies of target custom_allreduce_op
 [100%] Built target custom_allreduce_op
 ```
 Done! Now you library is created. Let's test the Op.
-## Part 3: Testing the Custom Op:
+## Part 3: 
+## Testing the Custom Op:
 This step is easy, simply import the library which is created in the previous part and use the operator other PyTorch operators. Since the custom op is registers into torch.ops we will have to call `torch.ops.my_ops.custom_allreduce(input)`
 ```
 import torch
