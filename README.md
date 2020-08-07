@@ -73,8 +73,7 @@ TORCH_LIBRARY (my_ops, m){
 }
 ```
 ## Part 2: Building the custom op
-Now we have to build the custom op into a library which can be imported and used as a PyTorch operator. Here I have used the CMake recipe to build the op. If you want to use the python way of building then you refer to 
-https://pytorch.org/tutorials/advanced/torch_script_custom_ops.html#building-the-custom-operator for more details.
+Now we have to build the custom op into a library which can be imported and used as a PyTorch operator. Here I have used the CMake recipe to build the op. If you want to use the python way of building then you refer to [this_link](https://pytorch.org/tutorials/advanced/torch_script_custom_ops.html#building-the-custom-operator) for more details.
 
 1. Create a `CMakeList.txt` file(See the comments for explanation):
 ```
