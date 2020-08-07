@@ -1,8 +1,10 @@
 ## This is short End to End tutorial on how to hook custom operators in PyTorch.
-
 This Tutorial is devided into 3 Parts.
+
 Part 1: Creating an op and registering it to PyTorch.
+
 Part 2: Building the op into a shared library.
+
 Part 3: Testing out the custom op.
 
 ## Part 1: Creating an op and registering it to PyTorch.
