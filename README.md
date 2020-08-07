@@ -94,18 +94,18 @@ set_property(TARGET torch_cuda PROPERTY INTERFACE_COMPILE_OPTIONS "")
 set_property(TARGET torch_cpu PROPERTY INTERFACE_COMPILE_OPTIONS "")
 ```
 2. Make a `build` directory and run the following command inside the `build` directory:
-   ```
-   mkdir build; cd build;
-   cmake -DCMAKE_PREFIX_PATH="$(python -c 'import torch; print(torch.__path__[0])')" ..
-   ```
+```
+mkdir build; cd build;
+cmake -DCMAKE_PREFIX_PATH="$(python -c 'import torch; print(torch.__path__[0])')" ..
+```
 3. Now `make -j$(nproc)`
-    ```
-    Scanning dependencies of target custom_allreduce_op
-    [ 33%] Building CXX object CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.o
-    [ 66%] Building CUDA object CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_kernel.cu.o
-    [100%] Linking CXX shared library libcustom_allreduce_op.so
-    [100%] Built target custom_allreduce_op
-    ```
+```
+Scanning dependencies of target custom_allreduce_op
+[ 33%] Building CXX object CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.o
+[ 66%] Building CUDA object CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_kernel.cu.o
+[100%] Linking CXX shared library libcustom_allreduce_op.so
+[100%] Built target custom_allreduce_op
+```
 Done! Now you library is created. Let's test the Op.
 ## Part 3: Testing the Custom Op:
 This step is easy, simply import the library which is created in the previous part and use the operator other PyTorch operators. Since the custom op is registers into torch.ops we will have to call `torch.ops.my_ops.custom_allreduce(input)`
@@ -116,7 +116,7 @@ A = torch.ones(1024, dtype=torch.int, device='cuda')
 b = torch.ops.my_ops.custom_allreduce(A)
 print(b.to('cpu'))
 ```
-
+### Happy PyTorch!
 
 
 
