@@ -228,8 +228,8 @@ CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_kernel.cu.o
  /home/sandeep/anaconda3/lib/python3.7/site-packages/torch/include/torch/custom_class_detail.h
  /home/sandeep/anaconda3/lib/python3.7/site-packages/torch/include/torch/library.h
  /home/sandeep/anaconda3/lib/python3.7/site-packages/torch/include/torch/script.h
- /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/pyt_all_reduce_kernel.cu
- /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/pyt_all_reduce_kernel.hh
+ /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/pyt_all_reduce_kernel.cu
+ /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/pyt_all_reduce_kernel.hh
  /usr/local/cuda/include/builtin_types.h
  /usr/local/cuda/include/crt/host_defines.h
  /usr/local/cuda/include/cuComplex.h
@@ -702,8 +702,8 @@ CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.o
  /home/sandeep/anaconda3/lib/python3.7/site-packages/torch/include/torch/extension.h
  /home/sandeep/anaconda3/lib/python3.7/site-packages/torch/include/torch/library.h
  /home/sandeep/anaconda3/lib/python3.7/site-packages/torch/include/torch/script.h
- /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/pyt_all_reduce_kernel.hh
- /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/pyt_all_reduce_op.cpp
+ /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/pyt_all_reduce_kernel.hh
+ /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/pyt_all_reduce_op.cpp
  /usr/local/cuda/include/builtin_types.h
  /usr/local/cuda/include/crt/host_defines.h
  /usr/local/cuda/include/cuComplex.h

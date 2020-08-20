@@ -63,10 +63,10 @@ RM = /home/sandeep/anaconda3/lib/python3.7/site-packages/cmake/data/bin/cmake -E
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op
+CMAKE_SOURCE_DIR = /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build
+CMAKE_BINARY_DIR = /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/custom_allreduce_op.dir/depend.make
@@ -79,21 +79,21 @@ include CMakeFiles/custom_allreduce_op.dir/flags.make
 
 CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.o: CMakeFiles/custom_allreduce_op.dir/flags.make
 CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.o: ../pyt_all_reduce_op.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.o -c /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/pyt_all_reduce_op.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.o -c /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/pyt_all_reduce_op.cpp
 
 CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/pyt_all_reduce_op.cpp > CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/pyt_all_reduce_op.cpp > CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.i
 
 CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/pyt_all_reduce_op.cpp -o CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/pyt_all_reduce_op.cpp -o CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_op.cpp.s
 
 CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_kernel.cu.o: CMakeFiles/custom_allreduce_op.dir/flags.make
 CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_kernel.cu.o: ../pyt_all_reduce_kernel.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_kernel.cu.o"
-	/usr/local/cuda/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/pyt_all_reduce_kernel.cu -o CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_kernel.cu.o
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_kernel.cu.o"
+	/usr/local/cuda/bin/nvcc  $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -x cu -c /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/pyt_all_reduce_kernel.cu -o CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_kernel.cu.o
 
 CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_kernel.cu.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/custom_allreduce_op.dir/pyt_all_reduce_kernel.cu.i"
@@ -130,7 +130,7 @@ libcustom_allreduce_op.so: /usr/lib/x86_64-linux-gnu/libcudnn.so
 libcustom_allreduce_op.so: /usr/local/cuda/lib64/libnvToolsExt.so
 libcustom_allreduce_op.so: /usr/local/cuda/lib64/libcudart.so
 libcustom_allreduce_op.so: CMakeFiles/custom_allreduce_op.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libcustom_allreduce_op.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libcustom_allreduce_op.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_allreduce_op.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -143,6 +143,6 @@ CMakeFiles/custom_allreduce_op.dir/clean:
 .PHONY : CMakeFiles/custom_allreduce_op.dir/clean
 
 CMakeFiles/custom_allreduce_op.dir/depend:
-	cd /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles/custom_allreduce_op.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build/CMakeFiles/custom_allreduce_op.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_allreduce_op.dir/depend
 

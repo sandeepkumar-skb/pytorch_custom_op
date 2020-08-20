@@ -2806,13 +2806,13 @@ torch/custom_class.h
 ATen/ATen.h
 -
 
-/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/pyt_all_reduce_kernel.cu
+/home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/pyt_all_reduce_kernel.cu
 torch/script.h
 -
 pyt_all_reduce_kernel.hh
-/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/pyt_all_reduce_kernel.hh
+/home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/pyt_all_reduce_kernel.hh
 
-/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/pyt_all_reduce_kernel.hh
+/home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/pyt_all_reduce_kernel.hh
 ATen/cuda/CUDAContext.h
 -
 torch/script.h

@@ -64,10 +64,10 @@ RM = /home/sandeep/anaconda3/lib/python3.7/site-packages/cmake/data/bin/cmake -E
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op
+CMAKE_SOURCE_DIR = /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build
+CMAKE_BINARY_DIR = /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -94,14 +94,14 @@ clean: CMakeFiles/custom_allreduce_op.dir/clean
 CMakeFiles/custom_allreduce_op.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_allreduce_op.dir/build.make CMakeFiles/custom_allreduce_op.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/custom_allreduce_op.dir/build.make CMakeFiles/custom_allreduce_op.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles --progress-num=1,2,3 "Built target custom_allreduce_op"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build/CMakeFiles --progress-num=1,2,3 "Built target custom_allreduce_op"
 .PHONY : CMakeFiles/custom_allreduce_op.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/custom_allreduce_op.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/custom_allreduce_op.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build/CMakeFiles 0
 .PHONY : CMakeFiles/custom_allreduce_op.dir/rule
 
 # Convenience name for target.

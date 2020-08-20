@@ -1,4 +1,4 @@
-# Install script for directory: /home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op
+# Install script for directory: /home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sandeep/misc/pytorch_custom_op/skballreduce-cpp-op/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/sandeep/misc/pytorch_custom_op/PyT_custom_allReduce_cpp_op/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
